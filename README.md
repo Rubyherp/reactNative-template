@@ -1,10 +1,10 @@
-This is a simple template that uses:
+# This is a simple template that uses:
 React Native
 Expo
 GlueStack
 NodeJS (ExpressJS)
 
-Setup instructions for integrated tech stack project:
+# Setup instructions for integrated tech stack project:
 
 1. Create Expo project
 bash
@@ -41,6 +41,7 @@ export default function RootLayout() {
         </GluestackUIProvider>
     );
 }
+
 7. Set up tsconfig.json
 json
 {
@@ -48,19 +49,22 @@ json
     "jsx": "react-native"
   }
 }
+
 8. Set up backend
 bash
 mkdir backend && cd backend
 npm init -y
 npm install express cors
+
 9. Create .env
 EXPO_PUBLIC_BACKEND_URL=http://192.168.x.x:3000
+
 10. Start everything
 bash
-# terminal 1 - backend
+terminal 1 - backend
 node backend/index.js
 
-# terminal 2 - expo
+terminal 2 - expo
 npx expo start -c
 
 Which files are gluestack specific?
